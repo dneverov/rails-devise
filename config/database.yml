@@ -56,6 +56,6 @@ production:
   encoding: unicode
   database: rails-devise_production
   pool:     5
-  username: dnadmin
-  password: torbell
+  username: <%= ENV["PG_ADMIN_USERNAME"] %>
+  password: <%= ENV["PG_ADMIN_PASSWORD"] %>
   template: template0
